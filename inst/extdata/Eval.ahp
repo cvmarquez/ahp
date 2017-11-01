@@ -29,17 +29,22 @@
 	        Especialización: 50
 	    HORTI FRUTICULTURA:
 	        Carga Horaria TC: 13.4
-	      	Carga Horaria TP: 13.5
-		      Disponible: 9.8
-		      Docentes TC: 71.43
-		      Docentes MS: 57.14
-		      Docentes PHD: 0
-		      Cobertura carrera: 5
-		      Especialización: 25
+	      	 Carga Horaria TP: 13.5
+		 Disponible: 9.8
+		 Docentes TC: 71.43
+		 Docentes MS: 57.14
+		 Docentes PHD: 0
+		 Cobertura carrera: 5
+		 Especialización: 25
 	        
-	        Gol:
+Goal:	        
 	name: Entorno
-	decision-makers:
+	description: >
+This is a classic
+author: cvmarquez
+preferences:
+
+	
 	pairwise:
 		      - [Academia, Institucional, 3]
 		      - [Academia, Curr_Invest, 7]
@@ -48,11 +53,13 @@
 		      - [Institucional, Soporte, 1]
 		      - [Curr_Invest, Soporte, 1/7]
 	children:	
+
 		    Academia:
 		      preferences:
 		        pairwise:
 		          - [Calidad, Carrera, 2]
 		      children:
+
 		Calidad:
 		      preferences:
 		        pairwise:
@@ -60,6 +67,7 @@
 		          - [Dedicación, Pertinencia, 5]
 		          - [Formación, Pertinencia, 3]
 		      children:
+
 		Carrera:
 		      preferences:
 		        pairwise:
@@ -67,6 +75,7 @@
 		          - [Contratación, Remuneración, 5]
 		          - [Derechos_Doc, Remuneración, 3]
 		      children:
+
 		Dedicación:
 		          preferences: 
 		            pairwise:
@@ -82,8 +91,13 @@
 		            pairwise:
 		              - [Docentes MS, Docentes PHD, 9]
 		          children: *alternatives
+
 		Derechos_Doc:
 		          preferences: 
 		            pairwise:
 		              - [Cobertura carrera, Especialización, 9]
 		          children: *alternatives
+
+
+
+	
