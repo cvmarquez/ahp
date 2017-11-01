@@ -17,8 +17,7 @@
 	        Docentes MS: 56.67
 	        Docentes PHD: 2.00
 	        Cobertura carrera: 17
-	        Especialización: 47.06 
-	    ADM EMP AGR:
+	        Especialización: 47.06     ADM EMP AGR:
 	        Carga Horaria TC: 16.56
 	        Carga Horaria TP: 9.5
 	        Disponible: 19.11
@@ -76,7 +75,7 @@
 		              - [Carga Horaria TP, en blanco, 1/2]
 		              - [Carga Horaria TP, Docentes TC, 5]
 		              - [Disponible, Docentes TC, 1]
-		          children: * alternativas
+		          children: * alternatives
 		Remuneración:
 		          preferences: 
 		            pairwise:
