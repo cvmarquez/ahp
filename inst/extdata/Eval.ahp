@@ -23,7 +23,8 @@
 	        Carga Horaria TP: 9.5
 	        Disponible: 19.11
 	        CT Docentes: 69.23
-	        Docentes MS: 76.92	        Docentes PHD: 1.00
+	        Docentes MS: 76.92
+	        Docentes PHD: 1.00
 	        Cobertura carrera: 9
 	        Especialización: 50
 	    HORTI FRUTICULTURA:
@@ -46,26 +47,26 @@
 		      - [Institucional, Curr_Invest, 9]
 		      - [Institucional, Soporte, 1]
 		      - [Curr_Invest, Soporte, 1/7]
-	uteq:	
+	children:	
 		    Academia:
 		      preferences:
 		        pairwise:
 		          - [Calidad, Carrera, 2]
-		      uteq:
+		      children:
 		Calidad:
 		      preferences:
 		        pairwise:
 		          - [Dedicación, Formación, 2]
 		          - [Dedicación, Pertinencia, 5]
 		          - [Formación, Pertinencia, 3]
-		      uteq:
+		      children:
 		Carrera:
 		      preferences:
 		        pairwise:
 		          - [Contratación, Derechos_Doc, 2]
 		          - [Contratación, Remuneración, 5]
 		          - [Derechos_Doc, Remuneración, 3]
-		      uteq:
+		      children:
 		Dedicación:
 		          preferences: 
 		            pairwise:
@@ -75,16 +76,14 @@
 		              - [Carga Horaria TP, en blanco, 1/2]
 		              - [Carga Horaria TP, Docentes TC, 5]
 		              - [Disponible, Docentes TC, 1]
-		          uteq: * alternativas
+		          children: * alternativas
 		Remuneración:
 		          preferences: 
 		            pairwise:
 		              - [Docentes MS, Docentes PHD, 9]
-		          uteq: *alternatives
+		          children: *alternatives
 		Derechos_Doc:
 		          preferences: 
 		            pairwise:
 		              - [Cobertura carrera, Especialización, 9]
-		          uteq: *alternatives
-
-
+		          children: *alternatives
